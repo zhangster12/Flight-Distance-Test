@@ -18,7 +18,7 @@ py flight_distance_test.py
 ### Push updates to GitHub, create executable, reorganizes files, creates shortcut
 ```
 git add .
-git commit -m ''
+git commit -m ' '
 git push origin
 ```
 
@@ -26,4 +26,4 @@ git push origin
 - [ ] 
 
 ## Contact
-Project Link: [https://github.com/zhangster12/Twitter-Contest-Bot](https://github.com/zhangster12/Twitter-Contest-Bot)#
+Project Link: [https://github.com/zhangster12/Flight-Distance-Test](https://github.com/zhangster12/Flight-Distance-Test)#

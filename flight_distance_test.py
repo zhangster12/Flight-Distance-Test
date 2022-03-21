@@ -5,7 +5,6 @@ import pandas as pd
 os.system('cls')
 
 f = pd.ExcelFile('flight_distance_test.xlsx')
-df = pd.read_excel('flight_distance_test.xlsx')
 
 r = 3956 # Radius of Earth (miles)
 distance = []
@@ -27,6 +26,9 @@ for i, row in f.parse(sheet_name = 'Flight Distance Test').iterrows():
     distance.append(round(d, 2))
 
 data = {'Distance (mi)': distance}
-df2 = pd.DataFrame(data, columns = ['Distance (mi)'])
-df = pd.concat([df, pd.DataFrame(data, columns = ['Distance (mi)'])], axis = 1)
+
+df = pd.concat([pd.read_excel('flight_distance_test.xlsx'), \
+    pd.DataFrame(data, columns = ['Distance (mi)'])], axis = 1)
+
 df.to_excel('output.xlsx', index = False)
+os.startfile('output.xlsx')
