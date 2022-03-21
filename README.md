@@ -18,7 +18,7 @@ py flight_distance_test.py
 ### Push updates to GitHub, create executable, reorganizes files, creates shortcut
 ```
 git add .
-git commit -m ' '
+git commit -m 'Shortened code'
 git push origin
 ```
 
